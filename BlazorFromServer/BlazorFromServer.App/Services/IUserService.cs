@@ -8,9 +8,8 @@ namespace BlazorFromServer.App.Services
 {
     public interface IUserService
     {
-        Task LoadPersons();
+        void LoadPersons();
         List<User> AvailablePersons { get; }
-        Task DeleteLastPerson();
-        Task LoadSavedList();
+        void DeleteLastPerson();
     }
 }

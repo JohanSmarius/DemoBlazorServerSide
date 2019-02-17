@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -10,14 +10,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlazoredLocalStorage" Version="0.3.1" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Browser" Version="0.7.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="0.7.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor" Version="0.8.0-preview-19104-04" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Build" Version="0.8.0-preview-19104-04" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="JavaScriptInterop\" />
-    <Folder Include="wwwroot\scripts\" />
   </ItemGroup>
 
   <ItemGroup>
