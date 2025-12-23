@@ -1,5 +1,3 @@
-using System;
-
 namespace BlazorFromServer.Data
 {
     public class WeatherForecast
@@ -10,6 +8,6 @@ namespace BlazorFromServer.Data
 
         public int TemperatureF { get; set; }
 
-        public string Summary { get; set; }
+        public string Summary { get; set; } = string.Empty;
     }
 }
