@@ -12,9 +12,9 @@ namespace BlazorFromServer.JavaScriptInterop
             _jsRuntime = jsRuntime ?? throw new System.ArgumentNullException(nameof(jsRuntime));
         }
 
-        public Task<bool> Confirm(string message)
+        public async Task<bool> Confirm(string message)
         {
-            return _jsRuntime.InvokeAsync<bool>("helperfunction.confirm", message);
+            return await _jsRuntime.InvokeAsync<bool>("helperfunction.confirm", message);
         }
     }
 }
